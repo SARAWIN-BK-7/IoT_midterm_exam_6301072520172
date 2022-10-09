@@ -4,6 +4,7 @@
     background-image: linear-gradient(to bottom right, red, yellow);
     display: flex;
     flex-wrap:wrap;
+    font-size: 10px;
 }
 
 .container > div {
