@@ -1,23 +1,137 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Send Data</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- <link rel="stylesheet" href=""> -->
-    </head>
-    <body>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Send Data</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="logo_icon3.png" />
+    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Bebas Neue">
+</head>
+
+<body>
+    <h1 contenteditable="true">Send to Data</h1>
+    <div class="form">
         <form id="send-Data" method="post">
-            <input type="text" id="st_id" placeholder="Student ID">
-            <input type="text" id="st_name" placeholder="Student name">
-            <input type="text" id="sen_name" placeholder="Sensor name">
-            <input type="text" id="sen_type" placeholder="Sensor Type">
-            <input type="text" id="sen_unit" placeholder="Sensor Unit">
-            <input type="text" id="sen_value" placeholder="Sensor Value">
-            <input type="submit" value="send">
-        </form>        
+            <h3><input type="text" id="st_id" placeholder="Student ID"><br></h3>
+            <h3><input type="text" id="st_name" placeholder="Student name"><br></h3>
+            <h3><input type="text" id="sen_name" placeholder="Sensor name"><br></h3>
+            <h3><input type="text" id="sen_type" placeholder="Sensor Type"><br></h3>
+            <h3><input type="text" id="sen_unit" placeholder="Sensor Unit"><br></h3>
+            <h3><input type="text" id="sen_value" placeholder="Sensor Value"><br></h3>
+            <input type="submit" value="send" class="submit"><br>
+        </form>
+    </div>
+    <button class="btn-b" onclick="document.location='index.html'">back
+        <style>
+            .form {
+                width: 200px;
+                font-size: large;
+                margin: auto;
+                text-align: center;
+                width: auto;
+                height: auto;
+            }
+
+            .submit {
+                background-color: #f4511e;
+                border: none;
+                color: white;
+                padding: 10px 70px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 0.6;
+                transition: 0.3s;
+                display: inline-block;
+                text-decoration: none;
+                cursor: pointer;
+            }
+
+            .submit:hover {
+                opacity: 1
+            }
+
+            .btn-b {
+                padding: 10px 20px;
+                font-size: 20px;
+                text-align: center;
+                cursor: pointer;
+                outline: none;
+                color: #fff;
+                background-color: #092144;
+                border: none;
+                border-radius: 15px;
+                box-shadow: 0 9px rgb(57, 57, 57);
+                margin-top: 20px;
+            }
+
+            .btn-b:hover {
+                background-color: #42aafe;
+            }
+
+            .btn-b:active {
+                background-color: #3e8e41;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+
+            body,
+            html {
+                background-image: linear-gradient(to bottom right, #02b1f5, #fff700);
+                background-position: center;
+                height: auto;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                font-family: "Bebas Neue", sans-serif;
+                margin: auto;
+            }
+
+            h1{
+                position: relative;
+                font-size: 6em;
+                letter-spacing: 15px;
+                color: #0e3742;
+                text-transform: uppercase;
+                width: 100%;
+                text-align: center;
+                -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+                line-height: 0.70em;
+                outline: none;
+                animation: animate 5s linear infinite;;
+              }
+              @keyframes animate 
+              {
+                0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
+                {
+                  color: #0e3742;
+                  text-shadow: none;
+                }
+                18.1%,20.1%,30%,50%,60.1%,80.1%,90%,100%
+                {
+                  color: #fff;
+                  text-shadow: 0 0 10px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 40px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4,
+                   ;
+                }
+              }
+            input {
+                border: 3px solid #555;
+                margin: 5px;
+                width: auto;
+                height: 40px;
+                border-radius: 50px;
+                text-align: center;
+                
+            }
+        </style>
         <script src="script_POST.js"></script>
-    </body>
+</body>
+
 </html>
