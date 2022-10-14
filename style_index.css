@@ -17,6 +17,8 @@ html {
   background-attachment: fixed;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
+  width: 100%;
+  height: auto;
  
 }
 
