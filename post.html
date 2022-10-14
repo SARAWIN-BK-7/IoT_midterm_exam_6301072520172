@@ -8,13 +8,13 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="logo_icon3.png" />
-    <link rel="stylesheet"href="https://fonts.googleapis.com/css?family=Bebas Neue">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bebas Neue">
 </head>
 
 <body>
     <h1 contenteditable="true">Send to Data</h1>
     <div class="form">
-        <form id="send-Data" method="post">
+        <!-- <form id="send-Data" method="post">
             <h3><input type="text" id="st_id" placeholder="Student ID"><br></h3>
             <h3><input type="text" id="st_name" placeholder="Student name"><br></h3>
             <h3><input type="text" id="sen_name" placeholder="Sensor name"><br></h3>
@@ -23,20 +23,21 @@
             <h3><input type="text" id="sen_value" placeholder="Sensor Value"><br></h3>
             <input type="submit" value="send" class="submit">
             <input type="reset" class="submit">
+        </form> -->
+        <!-- method POST to form -->
+        <form action="https://midterm-exam-010723313-2022.herokuapp.com/student_post" method="post">
+            <input type="text" placeholder="Student ID" name="st_id"><br>
+            <input type="text" placeholder="Student name" name="st_name"><br>
+            <input type="text" placeholder="Sensor name" name="sensor_name"><br>
+            <input type="text" placeholder="Sensor Type" name="sensor_type"><br>
+            <input type="text" placeholder="Sensor Unit" name="sensor_unit"><br>
+            <input type="text" placeholder="Sensor Value" name="sensor_value"><br>
+            <input type="submit" value="submit" class="submit">
+            <input type="reset" class="submit">
         </form>
-                                <!-- method POST to form -->
-        <!-- <form action="https://midterm-exam-010723313-2022.herokuapp.com/student_post" method="post">
-            st_id: <input type="text" placeholder="st_id" name="st_id"><br>
-            st_name: <input type="text" placeholder="st_name" name="st_name"><br>
-            Sensor-id: <input type="text" placeholder="sensor_name" name="sensor_name"><br>              
-            Sensor-name: <input type="text" placeholder="sensor_type" name="sensor_type"><br>       
-            Sensor-value: <input type="text" placeholder="sensor_unit" name="sensor_unit"><br>       
-            Sensor-unit: <input type="text" placeholder="sensor_value" name="sensor_value"><br>       
-             <input type="submit" value="submit">
-         </form> -->
     </div>
     <button class="btn-b" onclick="document.location='index.html'">back
-   
+
         <style>
             .form {
                 width: 200px;
@@ -62,14 +63,16 @@
                 background-color: #f6f6f6;
                 cursor: pointer;
                 box-shadow: 0 0 5px #f6f6f6,
-                            0 0 20px #f6f6f6,
-                            0 0 60px #f6f6f6,
-                            0 0 150px #f6f6f6,
-                            0 0 200px #f6f6f6;
+                    0 0 20px #f6f6f6,
+                    0 0 60px #f6f6f6,
+                    0 0 150px #f6f6f6,
+                    0 0 200px #f6f6f6;
             }
+
             .submit:active {
                 transform: translateY(5px);
             }
+
             .btn-b:active {
                 transform: translateY(5px);
             }
@@ -88,10 +91,10 @@
                 background-color: #f6f6f6;
                 cursor: pointer;
                 box-shadow: 0 0 5px #f6f6f6,
-                            0 0 20px #f6f6f6,
-                            0 0 60px #f6f6f6,
-                            0 0 150px #f6f6f6,
-                            0 0 200px #f6f6f6;
+                    0 0 20px #f6f6f6,
+                    0 0 60px #f6f6f6,
+                    0 0 150px #f6f6f6,
+                    0 0 200px #f6f6f6;
             }
 
             .btn-b:active {
@@ -111,7 +114,7 @@
                 margin: auto;
             }
 
-            h1{
+            h1 {
                 position: relative;
                 font-size: 6em;
                 letter-spacing: 15px;
@@ -122,26 +125,43 @@
                 -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
                 line-height: 0.70em;
                 outline: none;
-                animation: animate 5s linear infinite;;
-              }
-              @keyframes animate 
-              {
-                0%,18%,20%,50.1%,60%,65.1%,80%,90.1%,92%
-                {
-                  color: #0e3742;
-                  text-shadow: none;
+                animation: animate 5s linear infinite;
+                ;
+            }
+
+            @keyframes animate {
+
+                0%,
+                18%,
+                20%,
+                50.1%,
+                60%,
+                65.1%,
+                80%,
+                90.1%,
+                92% {
+                    color: #0e3742;
+                    text-shadow: none;
                 }
-                18.1%,20.1%,30%,50%,60.1%,80.1%,90%,100%
-                {
-                  color: #fff;
-                  text-shadow: 0 0 10px #03bcf4,
-                  0 0 20px #03bcf4,
-                  0 0 40px #03bcf4,
-                  0 0 80px #03bcf4,
-                  0 0 160px #03bcf4,
-                   ;
+
+                18.1%,
+                20.1%,
+                30%,
+                50%,
+                60.1%,
+                80.1%,
+                90%,
+                100% {
+                    color: #fff;
+                    text-shadow: 0 0 10px #03bcf4,
+                        0 0 20px #03bcf4,
+                        0 0 40px #03bcf4,
+                        0 0 80px #03bcf4,
+                        0 0 160px #03bcf4,
+                    ;
                 }
-              }
+            }
+
             input {
                 border: 3px solid #555;
                 margin: 5px;
@@ -149,19 +169,20 @@
                 height: 40px;
                 border-radius: 50px;
                 text-align: center;
-                
+
             }
+
             input:hover {
                 background-color: #f6f6f6;
                 cursor: pointer;
                 box-shadow: 0 0 5px #f6f6f6,
-                            0 0 20px #f6f6f6,
-                            0 0 60px #f6f6f6,
-                            0 0 150px #f6f6f6,
-                            0 0 200px #f6f6f6;
+                    0 0 20px #f6f6f6,
+                    0 0 60px #f6f6f6,
+                    0 0 150px #f6f6f6,
+                    0 0 200px #f6f6f6;
             }
         </style>
-        <script src="script_POST.js"></script>
+        <!-- <script src="script_POST.js"></script> -->
 </body>
 
 </html>
