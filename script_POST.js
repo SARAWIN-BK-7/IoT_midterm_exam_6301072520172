@@ -1,13 +1,13 @@
-var DataFrom = document.getElementById("send-Data");
+var DataFrom = document.getElementById('send-Data');
 
 DataFrom.addEventListener("submit", function (sending) {
   sending.preventDefault();
-  var studentid = document.getElementById("st_id");
-  var studentname = document.getElementById("st_name");
-  var senname = document.getElementById("sen_name");
-  var sentype = document.getElementById("sen_type");
-  var senunit = document.getElementById("sen_unit");
-  var senvalue = document.getElementById("sen_value");
+  var studentid = document.getElementById('st_id');
+  var studentname = document.getElementById('st_name');
+  var senname = document.getElementById('sen_name');
+  var sentype = document.getElementById('sen_typ');
+  var senunit = document.getElementById('sen_unit');
+  var senvalue = document.getElementById('sen_value');
   fetch("https://midterm-exam-010723313-2022.herokuapp.com/student_post", {
     method: "POST",
     body: JSON.stringify({
