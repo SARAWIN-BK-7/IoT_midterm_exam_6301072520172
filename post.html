@@ -23,8 +23,19 @@
             <h3><input type="text" id="sen_value" placeholder="Sensor Value"><br></h3>
             <input type="submit" value="send" class="submit"><br>
         </form>
+                                <!-- method POST to form -->
+        <!-- <form action="https://midterm-exam-010723313-2022.herokuapp.com/student_post" method="post">
+            st_id: <input type="text" placeholder="st_id" name="st_id"><br>
+            st_name: <input type="text" placeholder="st_name" name="st_name"><br>
+            Sensor-id: <input type="text" placeholder="sensor_name" name="sensor_name"><br>              
+            Sensor-name: <input type="text" placeholder="sensor_type" name="sensor_type"><br>       
+            Sensor-value: <input type="text" placeholder="sensor_unit" name="sensor_unit"><br>       
+            Sensor-unit: <input type="text" placeholder="sensor_value" name="sensor_value"><br>       
+             <input type="submit" value="submit">
+         </form> -->
     </div>
     <button class="btn-b" onclick="document.location='index.html'">back
+   
         <style>
             .form {
                 width: 200px;
@@ -36,51 +47,59 @@
             }
 
             .submit {
-                background-color: #f4511e;
+                padding: 10px 20px;
                 border: none;
-                color: white;
-                padding: 10px 70px;
-                text-align: center;
-                font-size: 16px;
-                margin: 4px 2px;
-                opacity: 0.6;
-                transition: 0.3s;
-                display: inline-block;
-                text-decoration: none;
-                cursor: pointer;
+                outline: none;
+                background: #f6f6f6;
+                font-size: 15px;
+                border-radius: 20px;
+                width: 150px;
+                font-family: "Bebas Neue";
             }
 
             .submit:hover {
-                opacity: 1
+                background-color: #f6f6f6;
+                cursor: pointer;
+                box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
+            }
+            .submit:active {
+                transform: translateY(5px);
+            }
+            .btn-b:active {
+                transform: translateY(5px);
             }
 
             .btn-b {
                 padding: 10px 20px;
-                font-size: 20px;
-                text-align: center;
-                cursor: pointer;
-                outline: none;
-                color: #fff;
-                background-color: #092144;
                 border: none;
-                border-radius: 15px;
-                box-shadow: 0 9px rgb(57, 57, 57);
-                margin-top: 20px;
+                outline: none;
+                background: #f6f6f6;
+                font-size: 15px;
+                border-radius: 20px;
+                font-family: "Bebas Neue";
             }
 
             .btn-b:hover {
-                background-color: #42aafe;
+                background-color: #f6f6f6;
+                cursor: pointer;
+                box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
             }
 
             .btn-b:active {
-                background-color: #3e8e41;
-                box-shadow: 0 5px #666;
-                transform: translateY(4px);
+                transform: translateY(5px);
             }
 
             body,
             html {
-                background-image: linear-gradient(to bottom right, #02b1f5, #fff700);
+                background-image: linear-gradient(to bottom right, #F9D423, #ff1717);
                 background-position: center;
                 height: auto;
                 background-position: center;
@@ -129,6 +148,15 @@
                 border-radius: 50px;
                 text-align: center;
                 
+            }
+            input:hover {
+                background-color: #f6f6f6;
+                cursor: pointer;
+                box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
             }
         </style>
         <script src="script_POST.js"></script>

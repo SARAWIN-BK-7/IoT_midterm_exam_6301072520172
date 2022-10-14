@@ -17,8 +17,10 @@
   border:5px solid black;
 }
 
+
+
 .btn-b {
-  padding: 10px 20px;
+  /* padding: 10px 20px;
   font-size: 20px;
   text-align: center;
   cursor: pointer;
@@ -27,26 +29,30 @@
   background-color: #092144;
   border: none;
   border-radius: 15px;
-  box-shadow: 0 9px rgb(57, 57, 57);
+  box-shadow: 0 9px rgb(57, 57, 57); */
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  background: #f6f6f6;
+  font-size: 15px;
+  border-radius: 20px;
+  font-family: "Bebas Neue";
 }
+
 .btn-b:hover {
-  background-color: #42aafe;
+  background-color: #f6f6f6;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f6f6f6,
+              0 0 20px #f6f6f6,
+              0 0 60px #f6f6f6,
+              0 0 150px #f6f6f6,
+              0 0 200px #f6f6f6;
 }
 
 .btn-b:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
+  transform: translateY(5px);
 }
 
-.but-p {
-  width: 150px;
-  height: 150px;
-  top: 50%;
-  left: 50%;
-  transform: translate(-20%, -20%);
-  position: absolute;
-}
 body,
 html {
   background-image: radial-gradient(circle, #0b17ff, #e994e2);
@@ -55,6 +61,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   font-family: "Bebas Neue";
 }
 h1{
@@ -80,11 +87,11 @@ h1{
   18.1%,20.1%,30%,50%,60.1%,80.1%,90%,100%
   {
     color: #fff;
-    text-shadow: 0 0 10px #03bcf4,
-    0 0 20px #03bcf4,
-    0 0 40px #03bcf4,
-    0 0 80px #03bcf4,
-    0 0 160px #03bcf4,
+    text-shadow:  0 0 5px #03bcf4,
+                  0 0 20px #03bcf4,
+                  0 0 60px #03bcf4,
+                  0 0 80px #03bcf4,
+                  0 0 160px #03bcf4,
      ;
   }
 }

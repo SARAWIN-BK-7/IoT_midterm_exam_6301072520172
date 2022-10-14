@@ -10,10 +10,11 @@ html {
   /* background-image: linear-gradient(to bottom right,
       rgb(84, 78, 255),
       rgb(58, 239, 255)); */
-  background-color: #07252d;
+  background-image: linear-gradient(to bottom right, #0FD850, #F9F047);
   height: 100%;
   background-position: center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   font-family: "Bebas Neue", sans-serif;
  
@@ -37,6 +38,7 @@ html {
   border: none;
   outline: none;
   border-radius: 5px;
+  font-family: "Bebas Neue", sans-serif;
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -60,22 +62,41 @@ html {
   padding: 12px 16px;
   text-decoration: none;
   display: block;
+  width: 150px;
 }
 
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .btn:hover,
 .dropdown:hover .btn {
   background-color: #828282;
+  cursor: pointer;
+  box-shadow: 0 0 5px #f6f6f6,
+                            0 0 20px #f6f6f6,
+                            0 0 60px #f6f6f6,
+                            0 0 150px #f6f6f6,
+                            0 0 200px #f6f6f6;
 }
 h1{
   position: relative;
@@ -107,6 +128,11 @@ h1{
     0 0 160px #03bcf4,
      ;
   }
+}
+p {
+  position: absolute;
+  bottom: 48px;
+  right: 50px;
 }
 /* h1 {
   position:absolute;
